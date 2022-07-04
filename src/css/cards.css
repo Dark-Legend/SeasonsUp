@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Lobster&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100vh;
+  background-image: url(/src/img/background.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Lobster", cursive;
+  overflow-x: hidden;
+}
+
+.weather-cards .left-card,
+.right-card {
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(17, 25, 40, 0.15);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  transition: all 0.5s ease;
+}
+
+.weather-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  border: 2px solid white;
+  margin-top: 100px;
+}
+
+.weather-cards .left-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  border-right: none;
+  flex-direction: column;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  gap: 2rem;
+  padding: 3rem;
+  height: 500px;
+  width: 300px;
+}
+
+.weather-cards .left-card img{
+    width: 200px;
+}
+
+.weather-cards .left-card:hover{
+    transform: scale(1.03);
+    z-index: 2;
+}
+.weather-cards .right-card:hover{
+    transform: scale(1.03);
+    z-index: 2;
+}
+.weather-cards .left-card p{
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: white;
+}
+.weather-cards .right-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid white;
+    flex-wrap: wrap;
+    border-left: none;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 3rem;
+    height: 500px;
+    width: 300px;
+    color: white;
+    font-size: 1.1rem;
+}
+
+.weather-cards .right-card .humidity{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.weather-cards .right-card .humidity img{
+    width: 100px;
+}
+
+.weather-cards .right-card .min-max{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.weather-cards .right-card .min-max img{
+    width: 100px;
+}
+
+.weather-cards .right-card .city{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.weather-cards .right-card .city img{
+    width: 100px;
+}
+
