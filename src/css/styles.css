@@ -14,3 +14,7 @@ body {
   font-family: 'Amatic SC', cursive;
   font-family: 'Lobster', cursive;
 }
+
+.hidden{
+    display: none;
+}

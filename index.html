@@ -1,28 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script defer src="src/js/script.js"></script>
-    <link rel="stylesheet" href="src/css/styles.css">
-    <link rel="shortcut icon" href="src/img/icon.png" type="image/x-icon">
-    <link rel="stylesheet" href="src/css/header.css">
+    <link rel="stylesheet" href="src/css/styles.css" />
+    <link rel="shortcut icon" href="src/img/icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="src/css/header.css" />
+    <link rel="stylesheet" href="src/css/quoteSection.css" />
     <title>SeasonsUP</title>
-</head>
-<body>
+  </head>
+  <body>
     <header class="header">
-        <div class="logo">
-            <img src="src/img/icon.png" alt="logo">
-            <p class="logo_name"> SeasonsUP</p>
+      <div class="logo">
+        <img src="src/img/icon.png" alt="logo" />
+        <p class="logo_name">SeasonsUP</p>
+      </div>
+      <div class="search-location">
+        <div class="input">
+          <input
+            class="search"
+            type="text"
+            name="City"
+            placeholder="Enter your city name"
+          />
+          <img src="src/img/search-icon.png" alt="search-logo" />
         </div>
-        <div class="search-location">
-            <div class="input">
-                <input class="search" type="text" name="City" placeholder="Enter your city name">
-                <img src="src/img/search-icon.png" alt="search-logo">
-            </div>
-            <a href="#" class="get-current-location">Get Device Location</a>
-        </div>
+        <a href="#" class="get-current-location">Get Device Location</a>
+      </div>
     </header>
-</body>
+
+    <!-- ===========quotes and cover image section==================== -->
+    <section class="container hidden">
+      <div class="quote">
+        <div class="left-quote">
+            <img src="src/img/left-quote.png" alt="left_quote" />
+        </div>
+        <p class="quote_text">
+          A change in the weather is sufficient <br>
+          to recreate the world and <br>
+          ourselves.
+        </p>
+        <div class="right-quote">
+            <img src="src/img/right-quote.png" alt="right_quote">
+        </div>
+      </div>
+      <div class="cover-img">
+        <img src="src/img/cover-removebg.png" alt="">
+      </div>
+    </section>
+  </body>
 </html>
