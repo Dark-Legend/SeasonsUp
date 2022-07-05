@@ -47,7 +47,7 @@ header .search-location {
   justify-content: center;
   gap: 2rem;
   align-items: center;
-  flex-wrap: ;
+  flex-wrap: wrap ;
   /* border: 2px solid red; */
   font-weight: 700;
   font-size: 1.5rem;
@@ -78,6 +78,7 @@ header .search-location .input .search {
 header .search-location .input img {
   width: 30px;
   cursor: pointer;
+  filter: invert();
 }
 
 header .search-location .input .search::placeholder {

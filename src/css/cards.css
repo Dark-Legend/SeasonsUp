@@ -14,15 +14,15 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  font-family: "Lobster", cursive;
+  font-family: "Amatic SC", cursive;
   overflow-x: hidden;
 }
 
 .weather-cards .left-card,
 .right-card {
-  backdrop-filter: blur(16px) saturate(180%);
-  -webkit-backdrop-filter: blur(16px) saturate(180%);
-  background-color: rgba(17, 25, 40, 0.15);
+  backdrop-filter: blur(3px) saturate(180%);
+  -webkit-backdrop-filter: blur(3px) saturate(180%);
+  background-color: rgba(17, 25, 40, 0.1);
   border-radius: 12px;
   border: 1px solid rgba(255, 255, 255, 0.125);
   transition: all 0.5s ease;
@@ -33,7 +33,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  border: 2px solid white;
+    gap: 0.5rem;
   margin-top: 100px;
 }
 
@@ -44,12 +44,10 @@ body {
   flex-wrap: wrap;
   border-right: none;
   flex-direction: column;
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
   gap: 2rem;
   padding: 3rem;
   height: 500px;
-  width: 300px;
+  width: 350px;
 }
 
 .weather-cards .left-card img{
@@ -74,18 +72,15 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    border: 2px solid white;
     flex-wrap: wrap;
     border-left: none;
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
     flex-direction: column;
     gap: 2rem;
     padding: 3rem;
     height: 500px;
-    width: 300px;
+    width: 350px;
     color: white;
-    font-size: 1.1rem;
+    font-size: 1.5rem;
 }
 
 .weather-cards .right-card .humidity{
@@ -110,6 +105,7 @@ body {
 
 .weather-cards .right-card .min-max img{
     width: 80px;
+    filter: invert();
 }
 
 .weather-cards .right-card .city{
@@ -124,3 +120,24 @@ body {
     width: 80px;
 }
 
+.weather-cards .right-card button{
+    width: 100px;
+    height: 5vh;
+    border: none;
+    outline: none;
+    font-size: 1.5rem;
+    border-radius: 50px;
+    transition: all 0.4s ease-out;
+    margin-top: 10px;
+    font-family: "Amatic SC", cursive;
+    font-weight: 700;
+}
+
+.weather-cards .right-card button:active{
+    transform: scale(0.8);
+}
+
+span{
+    color: #f87474;
+    font-weight: 700;
+}
