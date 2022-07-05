@@ -25,6 +25,7 @@ html,body {
 .container .quote .left-quote img{
     width: 50px;
     filter: invert();
+    text-shadow: 2px 2px 4px #000000;
 }
 
 
@@ -32,6 +33,7 @@ html,body {
     width: 50px;
     margin-left: 280px;
     filter: invert();
+    text-shadow: 2px 2px 4px #000000;
 }
 
 .container .quote p{
@@ -40,6 +42,7 @@ html,body {
     margin: 1rem 0 1rem 0;
     line-height: 4rem;
     color: white;
+    text-shadow: 2px 2px 4px #000000;
 }
 
 .container .cover-img img{
