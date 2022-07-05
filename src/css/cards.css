@@ -97,7 +97,7 @@ body {
 }
 
 .weather-cards .right-card .humidity img{
-    width: 100px;
+    width: 80px;
 }
 
 .weather-cards .right-card .min-max{
@@ -109,7 +109,7 @@ body {
 }
 
 .weather-cards .right-card .min-max img{
-    width: 100px;
+    width: 80px;
 }
 
 .weather-cards .right-card .city{
@@ -121,6 +121,6 @@ body {
 }
 
 .weather-cards .right-card .city img{
-    width: 100px;
+    width: 80px;
 }
 
