@@ -41,6 +41,7 @@ header .logo p {
   font-size: 2.5rem;
   cursor: pointer;
   color: white;
+  text-shadow: 2px 2px 4px #000000;
 }
 
 header .search-location {
@@ -64,6 +65,7 @@ header .search-location .input {
   color: white;
   border-radius: 50px;
   padding: 0.4rem;
+  text-shadow: 2px 2px 4px #000000;
 }
 
 header .search-location .input .search {
