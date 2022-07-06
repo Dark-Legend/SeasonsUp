@@ -129,4 +129,4 @@ searchBtn.addEventListener("click", function () {
     weatherDetails(jsonData);
   };
   getWeather();
-});
+}) ;
